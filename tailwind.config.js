@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         'jura': ['Jura', 'sans-serif'],
       },
+      backgroundImage: {
+        'custom-bg': "url('src/assets/images/customer-journey-management.webp')", // Replace with your image path
+      },
     },
   },
   plugins: [],

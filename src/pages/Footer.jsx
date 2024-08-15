@@ -45,8 +45,8 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="md:w-[87%] h-[150px] sm:w-full flex mt-6 hidden">
-        <div className="w-[65%] sm:w-full flex items-center sm:flex-col md:flex-row sm:justify-between pr-14 ">
+      <div className="w-[87%] h-[150px] w-full flex flex-col sm:flex-row mt-4 justify-center md:justify-between">
+        <div className=" sm:w-full flex items-center flex-col sm:flex-row justify-center md:justify-between md:pr-14 ">
           <div className="">
             <Link className="cursor-pointer">
                   Configurações de cookies
@@ -69,26 +69,26 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="w-[30%] flex justify-center items-center flex-col hidden">
+        <div className="md:w-[30%] flex justify-center items-center flex-col mt-4">
           <div>
             <p>Siga-nos nas redes sociais:</p>
           </div>
 
-          <div className="flex justify-center items-center ">
+          <div className="flex justify-center items-center mt-2 md:mt-0">
             <Link>
-              <FaSquareXTwitter  className="text-4xl text-fuchsia-400 cursor-pointer"/>
+              <FaSquareXTwitter  className="text-6xl md:text-4xl text-fuchsia-400 cursor-pointer"/>
             </Link>
             <Link>
-              <FaLinkedin className="text-4xl text-fuchsia-400 cursor-pointer"/>
+              <FaLinkedin className="text-6xl md:text-4xl text-fuchsia-400 cursor-pointer"/>
             </Link>
             <Link>
-              <FaInstagramSquare className="text-4xl text-fuchsia-400 cursor-pointer"/>
+              <FaInstagramSquare className="text-6xl md:text-4xl text-fuchsia-400 cursor-pointer"/>
             </Link>
             <Link>
-              <FaFacebookSquare className="text-4xl text-fuchsia-400 cursor-pointer"/>
+              <FaFacebookSquare className="text-6xl md:text-4xl text-fuchsia-400 cursor-pointer"/>
             </Link>
             <Link>
-              <AiFillTikTok className="text-4xl text-fuchsia-400 cursor-pointer"/>
+              <AiFillTikTok className="text-7xl md:text-4xl text-fuchsia-400 cursor-pointer"/>
             </Link>
           </div>
           
