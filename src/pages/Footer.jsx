@@ -45,8 +45,8 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="md:w-[87%] h-[150px] sm:w-full flex mt-6">
-        <div className="w-[65%] sm:w-full flex items-center flex-row sm:justify-between pr-14 ">
+      <div className="md:w-[87%] h-[150px] sm:w-full flex mt-6 hidden">
+        <div className="w-[65%] sm:w-full flex items-center sm:flex-col md:flex-row sm:justify-between pr-14 ">
           <div className="">
             <Link className="cursor-pointer">
                   Configurações de cookies
@@ -69,12 +69,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="w-[30%] flex justify-center items-center flex-col">
+        <div className="w-[30%] flex justify-center items-center flex-col hidden">
           <div>
             <p>Siga-nos nas redes sociais:</p>
           </div>
 
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center ">
             <Link>
               <FaSquareXTwitter  className="text-4xl text-fuchsia-400 cursor-pointer"/>
             </Link>
