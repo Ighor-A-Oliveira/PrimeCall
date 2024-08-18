@@ -1,8 +1,104 @@
-import { Carousel } from "react-responsive-carousel";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
+import List from "../components/List/List";
 
 
 export default function Home() {
+
+  const services = [
+    {
+      title: "Atendimento ao Cliente",
+      description:"Campanhas para promover produtos e serviços, gerar leads qualificados e aumentar vendas.",
+      backgroundImage: "/assets/images/customer-journey-management.webp",
+    },
+    {
+      title: "Telemarketing Outbound",
+      description:
+        "Suporte personalizado e resolução de problemas para garantir uma experiência positiva",
+      backgroundImage: "/assets/images/customer-journey-management.webp",
+    },
+    {
+      title: "Pesquisas de Satisfação",
+      description:
+        "Coleta e análise de feedback para medir a satisfação dos clientes e identificar áreas de melhoria",
+      backgroundImage: "/assets/images/customer-journey-management.webp",
+    },
+    {
+      title: "Geração de Leads",
+      description:
+        "Identificação e qualificação de potenciais clientes para impulsionar o crescimento de vendas",
+      backgroundImage: "/assets/images/customer-journey-management.webp",
+    },
+    {
+      title: "Consultoria em Marketing",
+      description:
+        "Desenvolvimento de estratégias de marketing para maximizar o impacto das campanhas de telemarketing",
+      backgroundImage: "/assets/images/customer-journey-management.webp",
+    },
+    {
+      title: "Gerenciamento de Campanhas",
+      description:
+        "Planejamento, execução e monitoramento de campanhas de marketing para alcançar objetivos específicos.",
+      backgroundImage: "/assets/images/customer-journey-management.webp",
+    },
+    {
+      title: "Treinamento de Equipes",
+      description:
+        "Treinamento e capacitação de equipes de telemarketing para melhorar a eficiência e a eficácia",
+      backgroundImage: "/assets/images/customer-journey-management.webp",
+    },
+    {
+      title: "Análise Avançada de Dados",
+      description:"Ferramentas e técnicas para analisar dados complexos, identificar padrões e gerar insights acionáveis",
+      backgroundImage: "/assets/images/customer-journey-management.webp",
+    },
+  ];
+  /* const premios = [
+    {
+      title: "The Customer Summit Awards 2024",
+      image: "/assets/images/customer-journey-management.webp",
+    },
+    {
+      title: "Prêmio Top of Mind 2018/19",
+      image: "/assets/images/customer-journey-management.webp",
+    },
+    {
+      title: "Prêmio Reclame Aqui 2024",
+      image: "/assets/images/customer-journey-management.webp",
+    }
+  ]; */
+
+  const clientes = [
+    {
+      title: "TechSolutions",
+      description:"A PrimeCall elevou nossa estratégia de telemarketing com soluções inovadoras e resultados visíveis.",
+      backgroundImage: "/assets/images/customer-journey-management.webp",
+    },
+    {
+      title: "FinServe",
+      description:
+        "Consultoria e geração de leads da PrimeCall foram essenciais para nosso crescimento",
+      backgroundImage: "/assets/images/customer-journey-management.webp",
+    },
+    {
+      title: "HealthPro",
+      description:
+        "A PrimeCall nos forneceu insights valiosos e melhorou nossa estratégia de marketing",
+      backgroundImage: "/assets/images/customer-journey-management.webp",
+    },
+    {
+      title: "RetailWorld",
+      description:
+        "A parceria com a PrimeCall trouxe um impacto positivo significativo nas nossas campanhas",
+      backgroundImage: "/assets/images/customer-journey-management.webp",
+    },
+    {
+      title: "GlobalCorp",
+      description:
+        "Soluções personalizadas e suporte contínuo da PrimeCall foram fundamentais para nosso sucesso",
+      backgroundImage: "/assets/images/customer-journey-management.webp",
+    }
+  ];
+
   return (
     <div className="font-jura min-h-[1000px] max-w-full">
       {/*faixa*/}
@@ -18,7 +114,7 @@ export default function Home() {
         <div className="flex justify-around items-center max-w-[80%] flex-col lg:flex-row">
           <div className="lg:px-6 text-justify max-w-[100%] lg:max-w-[60%]">
             <p className="text-purple-700 text-2xl md:text-3xl mb-2 font-bold">Sobre a PrimeCall</p>
-            <p className="text-base sm:text-lg mb-2">Fundada em 2023, a PrimeCall surgiu com a missão de transformar a experiência do cliente em serviços de telemarketing. Com uma equipe apaixonada por inovação e atendimento de qualidade, a PrimeCall se destacou rapidamente ao adotar tecnologias avançadas e práticas eficientes para proporcionar soluções personalizadas para cada cliente.</p>
+            <p className="text-base sm:text-lg mb-2">Fundada em 2016, a PrimeCall surgiu com a missão de transformar a experiência do cliente em serviços de telemarketing. Com uma equipe apaixonada por inovação e atendimento de qualidade, a PrimeCall se destacou rapidamente ao adotar tecnologias avançadas e práticas eficientes para proporcionar soluções personalizadas para cada cliente.</p>
             <p className="text-base sm:text-lg mb-2">Nosso compromisso com a excelência e a satisfação do cliente é o que nos diferencia. A PrimeCall tem se consolidado como referência no setor, graças ao nosso enfoque em criar estratégias de comunicação impactantes e ao suporte contínuo que oferecemos para garantir resultados extraordinários.</p>
           </div>
           <div className="mt-8 md:mt-0 max-w-[100%] max-h-auto ">
@@ -46,91 +142,23 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-white w-full flex justify-start items-center overflow-y-auto px-8 py-8 mb-16" >
-        {/*Card*/}
-        <div className="min-w-[200px] min-h-[300px] mx-4 relative transform transition-transform duration-300 ease-in-out hover:scale-110"> 
-          <img className="absolute left-0 z-0 w-full h-full rounded-lg" src="/assets/images/customer-journey-management.webp" alt=""/>
-          <p className="absolute left-0 top-[24px] font-sans text-xl text-white font-bold px-4 text-center leading-6">Atendimento ao Cliente</p>
-          <p className="absolute left-0 bottom-[85px] font-sans text-md text-white px-4 text-center leading-4">Campanhas para promover produtos e serviços, gerar leads qualificados e aumentar vendas.</p>
-          <div className="absolute left-0 right-0 bottom-[24px] h-auto flex justify-center"> 
-            <Link className=" w-[100px] text-center py-[10px] bg-violet-950 hover:bg-violet-900 text-white rounded-3xl">Saiba Mais</Link>
-          </div>
-        </div>
-        
-        <div className="min-w-[200px] min-h-[300px] mx-4 relative transform transition-transform duration-300 ease-in-out hover:scale-110"> 
-          <img className="absolute left-0 z-0 w-full h-full rounded-lg" src="/assets/images/customer-journey-management.webp" alt=""/>
-          <p className="absolute left-0 top-[24px] font-sans text-xl text-white font-bold px-4 text-center leading-6">Telemarketing Outbound</p>
-          <p className="absolute left-0 bottom-[85px] font-sans text-md text-white px-4 text-center leading-4">Suporte personalizado e resolução de problemas para garantir uma experiência positiva</p>
-          <div className="absolute left-0 right-0 bottom-[24px] h-auto flex justify-center"> 
-            <Link className=" w-[100px] text-center py-[10px] bg-violet-950 hover:bg-violet-900 text-white rounded-3xl">Saiba Mais</Link>
-          </div>
-        </div>
-
-        <div className="min-w-[200px] min-h-[300px] mx-4 relative transform transition-transform duration-300 ease-in-out hover:scale-110"> 
-          <img className="absolute left-0 z-0 w-full h-full rounded-lg" src="/assets/images/customer-journey-management.webp" alt=""/>
-          <p className="absolute left-0 top-[24px] font-sans text-xl text-white font-bold px-4 text-center leading-6">Pesquisas de Satisfação</p>
-          <p className="absolute left-0 bottom-[85px] font-sans text-md text-white px-4 text-center leading-4">Coleta e análise de feedback para medir a satisfação dos clientes e identificar áreas de melhoria</p>
-          <div className="absolute left-0 right-0 bottom-[24px] h-auto flex justify-center"> 
-            <Link className=" w-[100px] text-center py-[10px] bg-violet-950 hover:bg-violet-900 text-white rounded-3xl">Saiba Mais</Link>
-          </div>
-        </div>
-
-        <div className="min-w-[200px] min-h-[300px] mx-4 relative transform transition-transform duration-300 ease-in-out hover:scale-110"> 
-          <img className="absolute left-0 z-0 w-full h-full rounded-lg" src="/assets/images/customer-journey-management.webp" alt=""/>
-          <p className="absolute left-0 top-[24px] font-sans text-xl text-white font-bold px-4 text-center leading-6">Geração de Leads</p>
-          <p className="absolute left-0 bottom-[85px] font-sans text-md text-white px-4 text-center leading-4">Identificação e qualificação de potenciais clientes para impulsionar o crescimento de vendas</p>
-          <div className="absolute left-0 right-0 bottom-[24px] h-auto flex justify-center"> 
-            <Link className=" w-[100px] text-center py-[10px] bg-violet-950 hover:bg-violet-900 text-white rounded-3xl">Saiba Mais</Link>
-          </div>
-        </div>
-
-        <div className="min-w-[200px] min-h-[300px] mx-4 relative transform transition-transform duration-300 ease-in-out hover:scale-110"> 
-          <img className="absolute left-0 z-0 w-full h-full rounded-lg" src="/assets/images/customer-journey-management.webp" alt=""/>
-          <p className="absolute left-0 top-[24px] font-sans text-xl text-white font-bold px-4 text-center leading-6">Consultoria em Marketing</p>
-          <p className="absolute left-0 bottom-[85px] font-sans text-md text-white px-4 text-center leading-4">Desenvolvimento de estratégias de marketing para maximizar o impacto das campanhas de telemarketing</p>
-          <div className="absolute left-0 right-0 bottom-[24px] h-auto flex justify-center"> 
-            <Link className=" w-[100px] text-center py-[10px] bg-violet-950 hover:bg-violet-900 text-white rounded-3xl">Saiba Mais</Link>
-          </div>
-        </div>
-
-        <div className="min-w-[200px] min-h-[300px] mx-4 relative transform transition-transform duration-300 ease-in-out hover:scale-110"> 
-          <img className="absolute left-0 z-0 w-full h-full rounded-lg" src="/assets/images/customer-journey-management.webp" alt=""/>
-          <p className="absolute left-0 top-[24px] font-sans text-xl text-white font-bold px-4 text-center leading-6">Gerenciamento de Campanhas</p>
-          <p className="absolute left-0 bottom-[85px] font-sans text-md text-white px-4 text-center leading-4">Planejamento, execução e monitoramento de campanhas de marketing para alcançar objetivos específicos.</p>
-          <div className="absolute left-0 right-0 bottom-[24px] h-auto flex justify-center"> 
-            <Link className=" w-[100px] text-center py-[10px] bg-violet-950 hover:bg-violet-900 text-white rounded-3xl">Saiba Mais</Link>
-          </div>
-        </div>
-
-        <div className="min-w-[200px] min-h-[300px] mx-4 relative transform transition-transform duration-300 ease-in-out hover:scale-110"> 
-          <img className="absolute left-0 z-0 w-full h-full rounded-lg" src="/assets/images/customer-journey-management.webp" alt=""/>
-          <p className="absolute left-0 top-[24px] font-sans text-xl text-white font-bold px-4 text-center leading-6">Treinamento de Equipes</p>
-          <p className="absolute left-0 bottom-[85px] font-sans text-md text-white px-4 text-center leading-4">Treinamento e capacitação de equipes de telemarketing para melhorar a eficiência e a eficácia</p>
-          <div className="absolute left-0 right-0 bottom-[24px] h-auto flex justify-center"> 
-            <Link className=" w-[100px] text-center py-[10px] bg-violet-950 hover:bg-violet-900 text-white rounded-3xl">Saiba Mais</Link>
-          </div>
-        </div>
-
-        <div className="min-w-[200px] min-h-[300px] mx-4 relative transform transition-transform duration-300 ease-in-out hover:scale-110"> 
-          <img className="absolute left-0 z-0 w-full h-full rounded-lg" src="/assets/images/customer-journey-management.webp" alt=""/>
-          <p className="absolute left-0 top-[24px] font-sans text-xl text-white font-bold px-4 text-center leading-6">Análise Avançada de Dados</p>
-          <p className="absolute left-0 bottom-[85px] font-sans text-md text-white px-4 text-center leading-4">Ferramentas e técnicas para analisar dados complexos, identificar padrões e gerar insights acionáveis</p>
-          <div className="absolute left-0 right-0 bottom-[24px] h-auto flex justify-center"> 
-            <Link className=" w-[100px] text-center py-[10px] bg-violet-950 hover:bg-violet-900 text-white rounded-3xl">Saiba Mais</Link>
-          </div>
-        </div>
+      <div className="bg-white w-full flex justify-start items-center overflow-y-auto px-8 py-8 mb-16">
+        <List listItems={services}/>
       </div>
+      
 
 
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E879F9" d="M0,288L40,266.7C80,245,160,203,240,176C320,149,400,139,480,144C560,149,640,171,720,176C800,181,880,171,960,138.7C1040,107,1120,53,1200,37.3C1280,21,1360,43,1400,53.3L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
       <div className="w-full flex justify-center items-center flex-col bg-fuchsia-400 h-[350px]">
         <p className="w-full text-center text-white text-2xl font-bold">Nosso reconhecimento na insdustria</p>
         <div className="w-[80%] flex justify-around items-center">
+
           <img className="h-[65px] md:h-[135px] w-[50px] md:w-[100px]" src="/assets/images/premio1.png" alt="" />
           <img className="h-[100px] md:h-[200px] w-[100px] md:w-[200px]" src="/assets/images/premio2.png" alt="" />
           <img className="h-[50px] md:h-[100px] w-[100px] md:w-[200px]" src="/assets/images/premio3.png" alt="" />
         </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E879F9" d="M0,160L30,160C60,160,120,160,180,165.3C240,171,300,181,360,202.7C420,224,480,256,540,245.3C600,235,660,181,720,144C780,107,840,85,900,69.3C960,53,1020,43,1080,58.7C1140,75,1200,117,1260,138.7C1320,160,1380,160,1410,160L1440,160L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
 
 {/*Clientes */}
       <div className="flex justify-center mt-16">
@@ -139,79 +167,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-white w-full flex justify-start items-center overflow-y-auto px-8 py-8 mb-16" >
-        {/*Card*/}
-        <div className="min-w-[200px] min-h-[300px] mx-4 relative transform transition-transform duration-300 ease-in-out hover:scale-110"> 
-          <img className="absolute left-0 z-0 w-full h-full rounded-lg" src="/assets/images/customer-journey-management.webp" alt=""/>
-          <p className="absolute left-0 top-[24px] font-sans text-xl text-white font-bold px-4 text-center leading-6">Atendimento ao Cliente</p>
-          <p className="absolute left-0 bottom-[85px] font-sans text-md text-white px-4 text-center leading-4">Campanhas para promover produtos e serviços, gerar leads qualificados e aumentar vendas.</p>
-          <div className="absolute left-0 right-0 bottom-[24px] h-auto flex justify-center"> 
-            <Link className=" w-[100px] text-center py-[10px] bg-violet-950 hover:bg-violet-900 text-white rounded-3xl">Saiba Mais</Link>
-          </div>
-        </div>
-        
-        <div className="min-w-[200px] min-h-[300px] mx-4 relative transform transition-transform duration-300 ease-in-out hover:scale-110"> 
-          <img className="absolute left-0 z-0 w-full h-full rounded-lg" src="/assets/images/customer-journey-management.webp" alt=""/>
-          <p className="absolute left-0 top-[24px] font-sans text-xl text-white font-bold px-4 text-center leading-6">Telemarketing Outbound</p>
-          <p className="absolute left-0 bottom-[85px] font-sans text-md text-white px-4 text-center leading-4">Suporte personalizado e resolução de problemas para garantir uma experiência positiva</p>
-          <div className="absolute left-0 right-0 bottom-[24px] h-auto flex justify-center"> 
-            <Link className=" w-[100px] text-center py-[10px] bg-violet-950 hover:bg-violet-900 text-white rounded-3xl">Saiba Mais</Link>
-          </div>
-        </div>
-
-        <div className="min-w-[200px] min-h-[300px] mx-4 relative transform transition-transform duration-300 ease-in-out hover:scale-110"> 
-          <img className="absolute left-0 z-0 w-full h-full rounded-lg" src="/assets/images/customer-journey-management.webp" alt=""/>
-          <p className="absolute left-0 top-[24px] font-sans text-xl text-white font-bold px-4 text-center leading-6">Pesquisas de Satisfação</p>
-          <p className="absolute left-0 bottom-[85px] font-sans text-md text-white px-4 text-center leading-4">Coleta e análise de feedback para medir a satisfação dos clientes e identificar áreas de melhoria</p>
-          <div className="absolute left-0 right-0 bottom-[24px] h-auto flex justify-center"> 
-            <Link className=" w-[100px] text-center py-[10px] bg-violet-950 hover:bg-violet-900 text-white rounded-3xl">Saiba Mais</Link>
-          </div>
-        </div>
-
-        <div className="min-w-[200px] min-h-[300px] mx-4 relative transform transition-transform duration-300 ease-in-out hover:scale-110"> 
-          <img className="absolute left-0 z-0 w-full h-full rounded-lg" src="/assets/images/customer-journey-management.webp" alt=""/>
-          <p className="absolute left-0 top-[24px] font-sans text-xl text-white font-bold px-4 text-center leading-6">Geração de Leads</p>
-          <p className="absolute left-0 bottom-[85px] font-sans text-md text-white px-4 text-center leading-4">Identificação e qualificação de potenciais clientes para impulsionar o crescimento de vendas</p>
-          <div className="absolute left-0 right-0 bottom-[24px] h-auto flex justify-center"> 
-            <Link className=" w-[100px] text-center py-[10px] bg-violet-950 hover:bg-violet-900 text-white rounded-3xl">Saiba Mais</Link>
-          </div>
-        </div>
-
-        <div className="min-w-[200px] min-h-[300px] mx-4 relative transform transition-transform duration-300 ease-in-out hover:scale-110"> 
-          <img className="absolute left-0 z-0 w-full h-full rounded-lg" src="/assets/images/customer-journey-management.webp" alt=""/>
-          <p className="absolute left-0 top-[24px] font-sans text-xl text-white font-bold px-4 text-center leading-6">Consultoria em Marketing</p>
-          <p className="absolute left-0 bottom-[85px] font-sans text-md text-white px-4 text-center leading-4">Desenvolvimento de estratégias de marketing para maximizar o impacto das campanhas de telemarketing</p>
-          <div className="absolute left-0 right-0 bottom-[24px] h-auto flex justify-center"> 
-            <Link className=" w-[100px] text-center py-[10px] bg-violet-950 hover:bg-violet-900 text-white rounded-3xl">Saiba Mais</Link>
-          </div>
-        </div>
-
-        <div className="min-w-[200px] min-h-[300px] mx-4 relative transform transition-transform duration-300 ease-in-out hover:scale-110"> 
-          <img className="absolute left-0 z-0 w-full h-full rounded-lg" src="/assets/images/customer-journey-management.webp" alt=""/>
-          <p className="absolute left-0 top-[24px] font-sans text-xl text-white font-bold px-4 text-center leading-6">Gerenciamento de Campanhas</p>
-          <p className="absolute left-0 bottom-[85px] font-sans text-md text-white px-4 text-center leading-4">Planejamento, execução e monitoramento de campanhas de marketing para alcançar objetivos específicos.</p>
-          <div className="absolute left-0 right-0 bottom-[24px] h-auto flex justify-center"> 
-            <Link className=" w-[100px] text-center py-[10px] bg-violet-950 hover:bg-violet-900 text-white rounded-3xl">Saiba Mais</Link>
-          </div>
-        </div>
-
-        <div className="min-w-[200px] min-h-[300px] mx-4 relative transform transition-transform duration-300 ease-in-out hover:scale-110"> 
-          <img className="absolute left-0 z-0 w-full h-full rounded-lg" src="/assets/images/customer-journey-management.webp" alt=""/>
-          <p className="absolute left-0 top-[24px] font-sans text-xl text-white font-bold px-4 text-center leading-6">Treinamento de Equipes</p>
-          <p className="absolute left-0 bottom-[85px] font-sans text-md text-white px-4 text-center leading-4">Treinamento e capacitação de equipes de telemarketing para melhorar a eficiência e a eficácia</p>
-          <div className="absolute left-0 right-0 bottom-[24px] h-auto flex justify-center"> 
-            <Link className=" w-[100px] text-center py-[10px] bg-violet-950 hover:bg-violet-900 text-white rounded-3xl">Saiba Mais</Link>
-          </div>
-        </div>
-
-        <div className="min-w-[200px] min-h-[300px] mx-4 relative transform transition-transform duration-300 ease-in-out hover:scale-110"> 
-          <img className="absolute left-0 z-0 w-full h-full rounded-lg" src="/assets/images/customer-journey-management.webp" alt=""/>
-          <p className="absolute left-0 top-[24px] font-sans text-xl text-white font-bold px-4 text-center leading-6">Análise Avançada de Dados</p>
-          <p className="absolute left-0 bottom-[85px] font-sans text-md text-white px-4 text-center leading-4">Ferramentas e técnicas para analisar dados complexos, identificar padrões e gerar insights acionáveis</p>
-          <div className="absolute left-0 right-0 bottom-[24px] h-auto flex justify-center"> 
-            <Link className=" w-[100px] text-center py-[10px] bg-violet-950 hover:bg-violet-900 text-white rounded-3xl">Saiba Mais</Link>
-          </div>
-        </div>
+      <div className="bg-white w-full flex justify-start lg:justify-center items-center overflow-y-auto px-8 py-8 mb-16" >
+        <List listItems={clientes}/>
       </div>
     </div>
   )
