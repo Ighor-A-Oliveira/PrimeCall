@@ -1,112 +1,21 @@
 //import { Link } from "react-router-dom";
+import Accordion, { AccordionItem } from "../components/Accordion/Accordion";
 import List from "../components/List/List";
+import {getAccordionData, getClientes, getServices} from "../API"
 
 
 export default function Home() {
-
-  const services = [
-    {
-      title: "Atendimento ao Cliente",
-      description:"Campanhas para promover produtos e serviços, gerar leads qualificados e aumentar vendas.",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
-    },
-    {
-      title: "Telemarketing Outbound",
-      description:
-        "Suporte personalizado e resolução de problemas para garantir uma experiência positiva",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
-    },
-    {
-      title: "Pesquisas de Satisfação",
-      description:
-        "Coleta e análise de feedback para medir a satisfação dos clientes e identificar áreas de melhoria",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
-    },
-    {
-      title: "Geração de Leads",
-      description:
-        "Identificação e qualificação de potenciais clientes para impulsionar o crescimento de vendas",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
-    },
-    {
-      title: "Consultoria em Marketing",
-      description:
-        "Desenvolvimento de estratégias de marketing para maximizar o impacto das campanhas de telemarketing",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
-    },
-    {
-      title: "Gerenciamento de Campanhas",
-      description:
-        "Planejamento, execução e monitoramento de campanhas de marketing para alcançar objetivos específicos.",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
-    },
-    {
-      title: "Treinamento de Equipes",
-      description:
-        "Treinamento e capacitação de equipes de telemarketing para melhorar a eficiência e a eficácia",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
-    },
-    {
-      title: "Análise Avançada de Dados",
-      description:"Ferramentas e técnicas para analisar dados complexos, identificar padrões e gerar insights acionáveis",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
-    },
-  ];
-  /* const premios = [
-    {
-      title: "The Customer Summit Awards 2024",
-      image: "/assets/images/customer-journey-management.webp",
-    },
-    {
-      title: "Prêmio Top of Mind 2018/19",
-      image: "/assets/images/customer-journey-management.webp",
-    },
-    {
-      title: "Prêmio Reclame Aqui 2024",
-      image: "/assets/images/customer-journey-management.webp",
-    }
-  ]; */
-
-  const clientes = [
-    {
-      title: "TechSolutions",
-      description:"A PrimeCall elevou nossa estratégia de telemarketing com soluções inovadoras e resultados visíveis.",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
-    },
-    {
-      title: "FinServe",
-      description:
-        "Consultoria e geração de leads da PrimeCall foram essenciais para nosso crescimento",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
-    },
-    {
-      title: "HealthPro",
-      description:
-        "A PrimeCall nos forneceu insights valiosos e melhorou nossa estratégia de marketing",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
-    },
-    {
-      title: "RetailWorld",
-      description:
-        "A parceria com a PrimeCall trouxe um impacto positivo significativo nas nossas campanhas",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
-    },
-    {
-      title: "GlobalCorp",
-      description:
-        "Soluções personalizadas e suporte contínuo da PrimeCall foram fundamentais para nosso sucesso",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
-    }
-  ];
+  const accordionData = getAccordionData();
+  
 
   return (
     <div className="font-jura min-h-[1000px] max-w-full">
       {/*faixa*/}
       <div className="bg-black flex justify-center items-center w-full">
-      <div className=" min-h-[470px] lg:min-h-[500px] max-w-[80%] flex lg:justify-around items-center w-full flex-col lg:flex-row">
-        <p className="text-white mt-36 lg:mt-0 mb-8 lg:mb-0 lg:text-4xl sm:text-base max-w-[90%] text-center">Há 6 anos seguidos uma das melhores empresas para se trabalhar</p>
-        <img className="max-w-[180px] sm:max-w-[200px] lg:max-w-[600px]" src="/assets/images/gptw.png"  alt="" />
-      </div>
+        <div className=" min-h-[470px] lg:min-h-[500px] max-w-[80%] flex lg:justify-around items-center w-full flex-col lg:flex-row">
+          <p className="text-white mt-36 lg:mt-0 mb-8 lg:mb-0 lg:text-4xl sm:text-base max-w-[90%] text-center">Há 6 anos seguidos uma das melhores empresas para se trabalhar</p>
+          <img className="max-w-[180px] sm:max-w-[200px] lg:max-w-[600px]" src="/assets/images/gptw.png"  alt="" />
+        </div>
       </div>
 
       {/*conteudo*/}
@@ -123,7 +32,7 @@ export default function Home() {
         </div>
       </div>
 
-      
+      {/* Waves */}
       <div className="h-[180px] md:h-[350px]  bg-violet-950"></div>
       <svg className="block md:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#2e1065" d="M0,96L40,128C80,160,160,224,240,245.3C320,267,400,245,480,208C560,171,640,117,720,117.3C800,117,880,171,960,202.7C1040,235,1120,245,1200,213.3C1280,181,1360,107,1400,69.3L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
@@ -134,7 +43,7 @@ export default function Home() {
 
 
 
-{/*serviços */}
+      {/*serviços */}
       <div className="flex justify-center">
         <div className="text-center w-[80%]">
           <p className="text-purple-700 text-2xl md:text-3xl mb-2 font-bold">Nossos serviços</p>
@@ -142,12 +51,13 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Serviços */}
       <div className="bg-white w-full flex justify-start items-center overflow-y-auto px-8 py-8 mb-16">
-        <List listItems={services}/>
+        <List listItems={getServices()}/>
       </div>
       
 
-
+      {/* Premios */}
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E879F9" d="M0,288L40,266.7C80,245,160,203,240,176C320,149,400,139,480,144C560,149,640,171,720,176C800,181,880,171,960,138.7C1040,107,1120,53,1200,37.3C1280,21,1360,43,1400,53.3L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
       <div className="w-full flex justify-center items-center flex-col bg-fuchsia-400 h-[350px]">
         <p className="w-full text-center text-white text-2xl font-bold">Nosso reconhecimento na insdustria</p>
@@ -160,16 +70,33 @@ export default function Home() {
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E879F9" d="M0,160L30,160C60,160,120,160,180,165.3C240,171,300,181,360,202.7C420,224,480,256,540,245.3C600,235,660,181,720,144C780,107,840,85,900,69.3C960,53,1020,43,1080,58.7C1140,75,1200,117,1260,138.7C1320,160,1380,160,1410,160L1440,160L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
 
-{/*Clientes */}
+      {/*Clientes */}
       <div className="flex justify-center mt-16">
         <div className="text-center w-[80%]">
           <p className="text-purple-700 text-2xl md:text-3xl mb-2 font-bold">Nossos clientes</p>
         </div>
       </div>
 
-      <div className="bg-white w-full flex justify-start lg:justify-center items-center overflow-y-auto px-8 py-8 mb-16" >
-        <List listItems={clientes}/>
+      {/*Clientes */}
+      <div className="bg-white w-full flex justify-around lg:justify-center items-center overflow-y-auto px-8 py-8 mb-16" >
+        <List listItems={getClientes()}/>
       </div>
+
+
+
+      {/*Accordion */}
+      <div className='max-w-full bg-violet-950 flex justify-center py-4'>
+        <div className='max-w-[80%] '>
+          <Accordion>
+            {accordionData.map((accordionRecord) => (
+              <AccordionItem key={accordionRecord.value} value={accordionRecord.value} trigger={accordionRecord.trigger}>
+                {accordionRecord.text}
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </div>
+      
     </div>
   )
 }
