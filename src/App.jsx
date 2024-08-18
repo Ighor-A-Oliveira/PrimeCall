@@ -3,6 +3,7 @@ import './App.css'
 import Home from './pages/Home'
 import About from './pages/About'
 import Layout from './pages/Layout'
+import NotFound from './components/NotFound/NotFound'
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />}/>
           <Route path="about" element={<About />}/>
-          <Route path='*' element={<p>Erro Pagina não encontrada</p>}/>
+          <Route path='*' element={<NotFound/>}/>
         </Route>
       </Routes>
     </>

@@ -5,7 +5,7 @@ import { FaSearch } from "react-icons/fa";
 
 export default function Navbar() {
   return (
-    <nav className="z-50 max-w-[100%] flex items-center justify-around bg-violet-950 w-full min-h-24 text-fuchsia-400 fixed">
+    <nav className="z-50 max-w-[100%] flex items-center justify-around bg-violet-950 w-full min-h-24 text-fuchsia-400 fixed top-0">
       <IoMenu className="md:ml-2 text-2xl md:hidden" />
 
       <Link className="md:ml-4 lg:ml-16" to="/">
