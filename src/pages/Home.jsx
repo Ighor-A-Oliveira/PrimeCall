@@ -2,6 +2,10 @@
 import Accordion, { AccordionItem } from "../components/Accordion/Accordion";
 import List from "../components/List/List";
 import {getAccordionData, getClientes, getServices} from "../API"
+import Banner from "../components/Banner/Banner";
+import TextAndImage from "../components/TextAndImage/TextAndImage";
+import ColorFiller from "../components/ColorFiller/ColorFiller";
+import Awards from "../components/Awards/Awards";
 
 
 export default function Home() {
@@ -11,29 +15,16 @@ export default function Home() {
   return (
     <div className="font-jura min-h-[1000px] max-w-full">
       {/*faixa*/}
-      <div className="bg-black flex justify-center items-center w-full">
-        <div className=" min-h-[470px] lg:min-h-[500px] max-w-[80%] flex lg:justify-around items-center w-full flex-col lg:flex-row">
-          <p className="text-white mt-36 lg:mt-0 mb-8 lg:mb-0 lg:text-4xl sm:text-base max-w-[90%] text-center">Há 6 anos seguidos uma das melhores empresas para se trabalhar</p>
-          <img className="max-w-[180px] sm:max-w-[200px] lg:max-w-[600px]" src="/assets/images/gptw.png"  alt="" />
-        </div>
-      </div>
+      {/* Maybe implement props to reuse this banner component in other pages */}
+      <Banner/>
 
       {/*conteudo*/}
-      <div className="bg-stone-100 min-h-[300px] flex justify-center py-8">
-        <div className="flex justify-around items-center max-w-[80%] flex-col lg:flex-row">
-          <div className="lg:px-6 text-justify max-w-[100%] lg:max-w-[60%]">
-            <p className="text-purple-700 text-2xl md:text-3xl mb-2 font-bold">Sobre a PrimeCall</p>
-            <p className="text-base sm:text-lg mb-2">Fundada em 2016, a PrimeCall surgiu com a missão de transformar a experiência do cliente em serviços de telemarketing. Com uma equipe apaixonada por inovação e atendimento de qualidade, a PrimeCall se destacou rapidamente ao adotar tecnologias avançadas e práticas eficientes para proporcionar soluções personalizadas para cada cliente.</p>
-            <p className="text-base sm:text-lg mb-2">Nosso compromisso com a excelência e a satisfação do cliente é o que nos diferencia. A PrimeCall tem se consolidado como referência no setor, graças ao nosso enfoque em criar estratégias de comunicação impactantes e ao suporte contínuo que oferecemos para garantir resultados extraordinários.</p>
-          </div>
-          <div className="mt-8 md:mt-0 max-w-[100%] max-h-auto ">
-            <img src="/assets/images/image-main-page-3.jpeg" className="w-full h-full" alt="" />
-          </div>
-        </div>
-      </div>
+      {/* Can reuse this component, create props to receive the text, image src and if the flex is row, col or reverse row/col */}
+      <TextAndImage/>
 
       {/* Waves */}
-      <div className="h-[180px] md:h-[350px]  bg-violet-950"></div>
+      {/* can reuse this component to accept many dimensions and colors */}
+      <ColorFiller/>
       <svg className="block md:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#2e1065" d="M0,96L40,128C80,160,160,224,240,245.3C320,267,400,245,480,208C560,171,640,117,720,117.3C800,117,880,171,960,202.7C1040,235,1120,245,1200,213.3C1280,181,1360,107,1400,69.3L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
       </svg>
@@ -58,18 +49,8 @@ export default function Home() {
       
 
       {/* Premios */}
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E879F9" d="M0,288L40,266.7C80,245,160,203,240,176C320,149,400,139,480,144C560,149,640,171,720,176C800,181,880,171,960,138.7C1040,107,1120,53,1200,37.3C1280,21,1360,43,1400,53.3L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
-      <div className="w-full flex justify-center items-center flex-col bg-fuchsia-400 h-[350px]">
-        <p className="w-full text-center text-white text-2xl font-bold">Nosso reconhecimento na insdustria</p>
-        <div className="w-[80%] flex justify-around items-center">
-
-          <img className="h-[65px] md:h-[135px] w-[50px] md:w-[100px]" src="/assets/images/premio1.png" alt="" />
-          <img className="h-[100px] md:h-[200px] w-[100px] md:w-[200px]" src="/assets/images/premio2.png" alt="" />
-          <img className="h-[50px] md:h-[100px] w-[100px] md:w-[200px]" src="/assets/images/premio3.png" alt="" />
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E879F9" d="M0,160L30,160C60,160,120,160,180,165.3C240,171,300,181,360,202.7C420,224,480,256,540,245.3C600,235,660,181,720,144C780,107,840,85,900,69.3C960,53,1020,43,1080,58.7C1140,75,1200,117,1260,138.7C1320,160,1380,160,1410,160L1440,160L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
-
+      <Awards/>
+      
       {/*Clientes */}
       <div className="flex justify-center mt-16">
         <div className="text-center w-[80%]">
