@@ -133,3 +133,55 @@ const services = [
     return accordionData;
   }
   
+
+  const footerLinks = [
+    {
+      title: "Sobre a PrimeCall",
+      links: [
+        { name: "Quem Somos", url: "/quem-somos" },
+        { name: "Nossa Missão", url: "/missao" },
+        { name: "Nossa História", url: "/historia" },
+        { name: "Valores", url: "/valores" },
+        { name: "Carreiras", url: "/carreiras" },
+      ]
+    },
+    {
+      title: "Nossos Serviços",
+      links: [
+        { name: "Consultoria Estratégica", url: "/consultoria-estrategica" },
+        { name: "Telemarketing Outbound", url: "/telemarketing-outbound" },
+        { name: "Pesquisas de Satisfação", url: "/pesquisas-satisfacao" },
+        { name: "Geração de Leads", url: "/geracao-leads" },
+        { name: "Consultoria em Marketing", url: "/consultoria-marketing" },
+        { name: "Gerenciamento de Campanhas", url: "/gerenciamento-campanhas" },
+        { name: "Treinamento de Equipes", url: "/treinamento-equipes" },
+        { name: "Análise Avançada de Dados", url: "/analise-avancada-dados" },
+      ]
+    },
+    {
+      title: "Fale Conosco",
+      links: [
+        { name: "Contato Geral", url: "/contato-geral" },
+        { name: "Suporte ao Cliente", url: "/suporte-cliente" },
+        { name: "Solicitações de Informações", url: "/solicitacoes-informacoes" },
+        { name: "Feedback", url: "/feedback" },
+        { name: "Endereço", url: "/endereco" },
+      ]
+    },
+    {
+      title: "Informações Legais",
+      links: [
+        { name: "Termos de Serviço", url: "/termos-servico" },
+        { name: "Política de Privacidade", url: "/politica-privacidade" },
+        { name: "Política de Cookies", url: "/politica-cookies" },
+        { name: "Aviso Legal", url: "/aviso-legal" },
+        { name: "Direitos Autorais", url: "/direitos-autorais" },
+      ]
+    }
+  ];
+
+  export function getFooterLinks() {
+    return footerLinks;
+  }
+  
+

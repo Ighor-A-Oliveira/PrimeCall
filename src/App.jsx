@@ -12,6 +12,7 @@ function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />}/>
           <Route path="about" element={<About />}/>
+          <Route path='*' element={<p>Erro Pagina não encontrada</p>}/>
         </Route>
       </Routes>
     </>

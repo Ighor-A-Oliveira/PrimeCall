@@ -2,7 +2,7 @@
 
 export default function TextAndImage() {
   return (
-    <div className="bg-stone-100 min-h-[300px] flex justify-center py-8">
+    <div className="bg-stone-100 min-h-[300px] flex justify-center py-14">
         <div className="flex justify-around items-center max-w-[80%] flex-col lg:flex-row">
         <div className="lg:px-6 text-justify max-w-[100%] lg:max-w-[60%]">
             <p className="text-purple-700 text-2xl md:text-3xl mb-2 font-bold">Sobre a PrimeCall</p>
