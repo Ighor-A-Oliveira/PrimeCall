@@ -59,7 +59,7 @@ export default function List(props) {
       {listItems.map((item, index) => (
         <div
           key={index} // Adicionando a chave única para cada item
-          className="min-w-[200px] min-h-[300px] mx-4 relative transform transition-transform duration-300 ease-in-out hover:scale-110"
+          className="min-w-[200px] min-h-[300px] mx-4 relative transform transition-transform duration-300 ease-in-out hover:scale-110 shadow-lg"
         >
           <img
             className="absolute left-0 z-0 w-full h-full rounded-lg"

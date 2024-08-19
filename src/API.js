@@ -68,32 +68,28 @@ const services = [
   const clientes = [
     {
       title: "TechSolutions",
-      description:"A PrimeCall elevou nossa estratégia de telemarketing com soluções inovadoras e resultados visíveis.",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
+      description:"", //"A PrimeCall elevou nossa estratégia de telemarketing com soluções inovadoras e resultados visíveis.",
+      backgroundImage: "/assets/images/techsolution.PNG",
     },
     {
       title: "FinServe",
-      description:
-        "Consultoria e geração de leads da PrimeCall foram essenciais para nosso crescimento",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
+      description:"", //"Consultoria e geração de leads da PrimeCall foram essenciais para nosso crescimento",
+      backgroundImage: "/assets/images/finserve.PNG",
     },
     {
       title: "HealthPro",
-      description:
-        "A PrimeCall nos forneceu insights valiosos e melhorou nossa estratégia de marketing",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
+      description: "", //"A PrimeCall nos forneceu insights valiosos e melhorou nossa estratégia de marketing",
+      backgroundImage: "/assets/images/healthpro.PNG",
     },
     {
       title: "RetailWorld",
-      description:
-        "A parceria com a PrimeCall trouxe um impacto positivo significativo nas nossas campanhas",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
+      description:"", //"A parceria com a PrimeCall trouxe um impacto positivo significativo nas nossas campanhas",
+      backgroundImage: "/assets/images/retailWorld.PNG",
     },
     {
       title: "GlobalCorp",
-      description:
-        "Soluções personalizadas e suporte contínuo da PrimeCall foram fundamentais para nosso sucesso",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
+      description:"", //"Soluções personalizadas e suporte contínuo da PrimeCall foram fundamentais para nosso sucesso",
+      backgroundImage: "/assets/images/globalCorp.PNG",
     }
   ];
 
