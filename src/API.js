@@ -8,42 +8,42 @@ const services = [
       title: "Telemarketing Outbound",
       description:
         "Suporte personalizado e resolução de problemas para garantir uma experiência positiva",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
+      backgroundImage: "/assets/images/service10.png",
     },
     {
       title: "Pesquisas de Satisfação",
       description:
         "Coleta e análise de feedback para medir a satisfação dos clientes e identificar áreas de melhoria",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
+      backgroundImage: "/assets/images/service4.png",
     },
     {
       title: "Geração de Leads",
       description:
         "Identificação e qualificação de potenciais clientes para impulsionar o crescimento de vendas",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
+      backgroundImage: "/assets/images/service5.png",
     },
     {
       title: "Consultoria em Marketing",
       description:
         "Desenvolvimento de estratégias de marketing para maximizar o impacto das campanhas de telemarketing",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
+      backgroundImage: "/assets/images/service7.png",
     },
     {
       title: "Gerenciamento de Campanhas",
       description:
         "Planejamento, execução e monitoramento de campanhas de marketing para alcançar objetivos específicos.",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
+      backgroundImage: "/assets/images/service8.png",
     },
     {
       title: "Treinamento de Equipes",
       description:
         "Treinamento e capacitação de equipes de telemarketing para melhorar a eficiência e a eficácia",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
+      backgroundImage: "/assets/images/service9.png",
     },
     {
       title: "Análise Avançada de Dados",
       description:"Ferramentas e técnicas para analisar dados complexos, identificar padrões e gerar insights acionáveis",
-      backgroundImage: "/assets/images/customer-journey-management.webp",
+      backgroundImage: "/assets/images/service3.png",
     },
   ];
 
@@ -68,27 +68,27 @@ const services = [
   const clientes = [
     {
       title: "TechSolutions",
-      description:"", //"A PrimeCall elevou nossa estratégia de telemarketing com soluções inovadoras e resultados visíveis.",
+      description:"A PrimeCall elevou nossa estratégia de telemarketing com soluções inovadoras e resultados visíveis.",
       backgroundImage: "/assets/images/techsolution.PNG",
     },
     {
       title: "FinServe",
-      description:"", //"Consultoria e geração de leads da PrimeCall foram essenciais para nosso crescimento",
+      description:"Consultoria e geração de leads da PrimeCall foram essenciais para nosso crescimento",
       backgroundImage: "/assets/images/finserve.PNG",
     },
     {
       title: "HealthPro",
-      description: "", //"A PrimeCall nos forneceu insights valiosos e melhorou nossa estratégia de marketing",
+      description: "A PrimeCall nos forneceu insights valiosos e melhorou nossa estratégia de marketing",
       backgroundImage: "/assets/images/healthpro.PNG",
     },
     {
       title: "RetailWorld",
-      description:"", //"A parceria com a PrimeCall trouxe um impacto positivo significativo nas nossas campanhas",
+      description:"A parceria com a PrimeCall trouxe um impacto positivo significativo nas nossas campanhas",
       backgroundImage: "/assets/images/retailWorld.PNG",
     },
     {
       title: "GlobalCorp",
-      description:"", //"Soluções personalizadas e suporte contínuo da PrimeCall foram fundamentais para nosso sucesso",
+      description:"Soluções personalizadas e suporte contínuo da PrimeCall foram fundamentais para nosso sucesso",
       backgroundImage: "/assets/images/globalCorp.PNG",
     }
   ];

@@ -64,24 +64,24 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="w-[90%] h-[125px] flex flex-col sm:flex-row justify-center sm:justify-between">
+      <div className="w-[90%] h-[125px] flex flex-col mt-8 sm:mt0 sm:flex-row justify-center sm:justify-between">
         <div className="w-full flex items-center text-center flex-col sm:flex-row justify-center md:justify-around ">
           <div className="">
             <Link className="cursor-pointer sm:text-xs sm:mr-0.5">
                   Configurações de cookies
             </Link>
           </div>
-          <div>
+          <div className="mt-1 sm:mt0">
             <Link className="cursor-pointer sm:text-xs sm:mr-0.5">
               Politicas de privacidade de dados
             </Link>
           </div>
-          <div>
+          <div className="mt-1 sm:mt0">
             <Link className="cursor-pointer sm:text-xs sm:mr-0.5">
               Codigos e politicas
             </Link>
           </div>
-          <div>
+          <div className="mt-1 sm:mt0">
             <Link className="cursor-pointer sm:text-xs sm:mr-0.5  ">
               Declaração legal
             </Link>
