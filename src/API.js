@@ -181,3 +181,58 @@ const services = [
   }
   
 
+const formFields = [
+  {
+    id:"name",
+    name:"name",
+    placeholder:"Nome",
+    className:"w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 md:mr-4",
+    id2:"lastName",
+    name2:"lastName",
+    placeholder2:"Sobrenome",
+    className2:"w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 md:ml-4 mt-4 md:mt-0"
+  },
+  {
+    id:"email",
+    name:"email",
+    placeholder:"Email",
+    className:"w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500",
+    single: true
+  },
+  {
+    id:"phone",
+    name:"phone",
+    placeholder:"Telefone",
+    className:"w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 md:mr-4",
+    id2:"company",
+    name2:"company",
+    placeholder2:"Empresa",
+    className2:"w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 md:ml-4 mt-4 md:mt-0"
+    
+  },
+  
+  {
+    id:"jobTitle",
+    name:"jobTitle",
+    placeholder:"Titulo da sua função",
+    className:"w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 md:mr-4",
+    id2:"country",
+    name2:"country",
+    placeholder2:"Pais",
+    className2:"w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 md:ml-4 mt-4 md:mt-0"
+  },
+  {
+    id:"industry",
+    name:"industry",
+    placeholder:"Industria",
+    className:"w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 md:mr-4",
+    id2:"foundOut",
+    name2:"foundOut",
+    placeholder2:"Como soube da gente?",
+    className2:"w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 md:ml-4 mt-4 md:mt-0"
+  },
+]
+
+export function getFormFields() {
+  return formFields;
+}
