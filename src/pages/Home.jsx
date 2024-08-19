@@ -6,6 +6,7 @@ import Banner from "../components/Banner/Banner";
 import TextAndImage from "../components/TextAndImage/TextAndImage";
 import ColorFiller from "../components/ColorFiller/ColorFiller";
 import Awards from "../components/Awards/Awards";
+import ContactForm from "../components/ContactForm/ContactForm";
 
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
   
 
   return (
-    <div className="font-jura min-h-[1000px] max-w-full">
+    <div className="font-jura min-h-[1000px] max-w-full flex flex-col justify-center">
       {/*faixa*/}
       {/* Maybe implement props to reuse this banner component in other pages */}
       <Banner/>
@@ -78,6 +79,14 @@ export default function Home() {
         </div>
       </div>
       
+      {/** Contact FOrm */}
+      <div className="w-full h-[800px] flex justify-start items-center bg-pink-bg bg-cover bg-center flex-col py-8">
+        <p className="text-2xl md:text-4xl text-white mb-8 max-w-[80%] text-center">Bora criar uma história juntos, basta preencher o formulario de contato</p>
+        <div className="border-[1px] border-black border-solid bg-white rounded-lg w-[80%] h-fit p-8">
+          <ContactForm/>
+        </div>
+      </div>
+
     </div>
   )
 }

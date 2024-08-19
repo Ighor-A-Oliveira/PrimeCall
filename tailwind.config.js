@@ -7,7 +7,7 @@ export default {
         'jura': ['Jura', 'sans-serif'],
       },
       backgroundImage: {
-        'custom-bg': "url('src/assets/images/customer-journey-management.webp')", // Replace with your image path
+        'pink-bg': "url('/assets/images/pink-bg.png')", // Replace with your image path
       },
     },
   },
