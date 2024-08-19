@@ -80,7 +80,7 @@ export default function Home() {
       </div>
       
       {/** Contact FOrm */}
-      <div className="w-full h-[800px] flex justify-start items-center bg-pink-bg bg-cover bg-center flex-col py-8">
+      <div className="w-full h-fit flex justify-start items-center bg-pink-bg bg-cover bg-center flex-col py-8">
         <p className="text-2xl md:text-4xl text-white mb-8 max-w-[80%] text-center">Bora criar uma história juntos, basta preencher o formulario de contato</p>
         <div className="border-[1px] border-black border-solid bg-white rounded-lg w-[80%] max-w-[1500px] h-fit p-8">
           <ContactForm/>
